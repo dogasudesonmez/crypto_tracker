@@ -11,10 +11,12 @@
 #coin_columns{
     display: flex;
     justify-content: space-between;
-    background-color: black;
     color:white;
     font-size:15px;
     padding: 20px;
+}
+#coin_columns:hover{
+    background-color: lightgray;
 }
 input{
     background-color: white;
