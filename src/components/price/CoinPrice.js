@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './coinPrice.css';
 
 const CoinPrice = () => {
     const [coins, setCoins] = useState([]);
@@ -11,13 +12,12 @@ const CoinPrice = () => {
 
     return (
 
-        <div className="title_price">
+        <div>
             <h2>Fiyat</h2>
             {coins.map(coin => {
                 return (
-                    <div>
-                       
-                        <div key={coin.name}>
+                    <div>                     
+                        <div className="title_price" key={coin.name} >
                             <p>${coin.current_price}</p>
                         </div>
 

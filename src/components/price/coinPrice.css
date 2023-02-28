@@ -1,0 +1,6 @@
+.title_price{
+    display: inline-block;
+}
+.title_price:hover{
+    background-color: gray;
+}

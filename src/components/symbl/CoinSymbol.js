@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './coinSymbol.css';
 
 
 const CoinSymbol = () => {
@@ -12,13 +13,13 @@ const CoinSymbol = () => {
 
     return (
         
-        <div className="title_symbol">
+        <div>
             <h2>Sembol</h2>
             {coins.map(coin => {
                 return (
                     <div>
                         
-                        <div key={coin.name}>
+                        <div key={coin.name} className="title_symbol">
                             <p style={{ fontSize: "15px" }}>{coin.symbol}</p>
                         </div>
 

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './coinChange.css';
 
 const CoinChange = () => {
     const [coins, setCoins] = useState([]);
@@ -11,12 +12,12 @@ const CoinChange = () => {
 
     return (
 
-        <div className="title_price">
+        <div >
             <h2>Degisim</h2>
             {coins.map(coin => {
                 return (
                     <div>
-                        <div key={coin.name}>
+                        <div className="title_change" key={coin.name}>
                             <p style={{ color: "deeppink" }}>{coin.price_change_percentage_24h}%</p>
                         </div>
 

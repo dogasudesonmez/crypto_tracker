@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './app.css';
 import { FaSearch } from '@react-icons/all-files/fa/FaSearch';
 import CoinNames from './components/name/CoinNames';
-import CoinSymbol from './components/CoinSymbol';
-import CoinPrice from './components/CoinPrice';
+import CoinSymbol from './components/symbl/CoinSymbol';
+import CoinPrice from './components/price/CoinPrice';
 import CoinChange from './components/change/CoinChange';
 
 function App() {
@@ -23,9 +23,7 @@ function App() {
             {coins.map(coin => {
                 return (
                     <div id="coin_columns">
-                        <div className="coin_symbl">
                         <CoinNames/>
-                        </div>
                         <CoinSymbol />
                         <CoinPrice />
                         <CoinChange/>
