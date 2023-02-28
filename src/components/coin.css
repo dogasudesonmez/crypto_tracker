@@ -1,0 +1,10 @@
+.coin_lines{
+    display: flex;
+    justify-content: space-between;
+}
+.coin_lines:hover{
+    background-color: gray;
+}
+.title_name {
+    display: flex;
+}

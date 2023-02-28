@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 #coin_columns{
-    display: flex;
     justify-content: space-between;
     color:white;
     font-size:15px;
