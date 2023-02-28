@@ -13,8 +13,13 @@ function App() {
 
                
             <div id="coin_columns">
-                        <h2>Isim</h2>
-                    <Coin />     
+                <div id="head_line">
+                <h2>Isim</h2>
+                <h2>Sembol</h2>
+                <h2>Fiyat</h2>
+                    <h2>Degisim</h2>
+                </div>
+                        <Coin />       
                 </div>
 
         </div>

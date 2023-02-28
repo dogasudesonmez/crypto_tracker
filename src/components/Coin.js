@@ -15,7 +15,7 @@ const Coin = () => {
             
             {coins.map(coin => {
                 return (
-                    <div className="coin_lines">                       
+                    <div className="coin_lines">
                         <div className="title_name" key={coin.name}>
                             <p><img src={coin.image} style={{ width: "30px" }} /></p><h2>{coin.name}</h2>
                             </div>                       

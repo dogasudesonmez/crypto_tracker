@@ -18,3 +18,7 @@ input{
 img{
     margin-right: 10px;
 }
+#head_line{
+    display: flex;
+    justify-content: space-between;
+}
