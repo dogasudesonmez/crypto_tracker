@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './app.css';
 import { FaSearch } from '@react-icons/all-files/fa/FaSearch';
+import CoinNames from './components/name/CoinNames';
+import CoinSymbol from './components/CoinSymbol';
+import CoinPrice from './components/CoinPrice';
+import CoinChange from './components/change/CoinChange';
 
 function App() {
     const [coins, setCoins] = useState([]);
@@ -14,27 +18,18 @@ function App() {
         <div className="App">
             <h1>Kripto Borsa </h1>
 
-                <input type="text"></input> <FaSearch />
-
-            <div id="list_block">
-                <p className="list_p">Isim</p>
-                <p className="list_p">Sembol</p>
-                <p className="list_p">Fiyat</p>
-                <p className="list_p">Degisim</p>
-
-            </div>
+            <input type="text"></ input> <FaSearch />
 
             {coins.map(coin => {
                 return (
-                    <div key={coin.name} id="coin_columns">
+                    <div id="coin_columns">
                         <div className="coin_symbl">
-                        <p><img src={coin.image} style={{ width: "30px" }} /></p>
-                            <h2>{coin.name}</h2>
+                        <CoinNames/>
                         </div>
-                        <p style={{ fontSize: "15px" }}>{coin.symbol}</p>
-                        <p>${coin.current_price}</p>
-                        <p style={{ color: "deeppink" }}>{coin.price_change_percentage_24h}%</p>
-
+                        <CoinSymbol />
+                        <CoinPrice />
+                        <CoinChange/>
+                    
                 </div>
                 );
             })}

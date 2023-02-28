@@ -1,12 +1,8 @@
 *{
     background-color:black;
     color:white;
-}
-#list_block{
-    display:flex;
-    justify-content:space-between;
-    padding: 20px;
-    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 #coin_columns{
     display: flex;
@@ -15,17 +11,10 @@
     font-size:15px;
     padding: 20px;
 }
-#coin_columns:hover{
-    background-color: lightgray;
-}
 input{
     background-color: white;
     margin-right: 10px;
     color: black;
-}
-.coin_symbl{
-    display: flex;
-    width: 25%;
 }
 img{
     margin-right: 10px;
