@@ -2,6 +2,9 @@
     display: flex;
     justify-content: space-between;
 }
+p{
+    background-color: transparent !important;
+}
 .coin_lines:hover{
     background-color: gray;
 }
